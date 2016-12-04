@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="tabs_script">
+        <div class="tab_script">
+          <input type="radio" name="css-tabs_script" id="tab_script-1" checked class="tab_script-switch">
+          <label for="tab_script-1" class="tab_script-label">Paso (1) - PRESENTACIÓN </label>
+               <div class="tab_script-content">
+               <hr />
+               <p align=center ><font size=5 color=maroon>Nombre de la Campaña: <b><u>{campaign.name}</b></u></font><input type="button" value="Ocultar Cabecera" id="contactbtn1" style="float: right;"/> </p>
+                   <hr />
+               <img align=right alt="ALTITUDE XPERIENCE" src="https://pages.altitude.com/hs-fs/hubfs/Product_Marketing/Product_Newsletter/July/2015-altitude-blue.png?t=1478908970284&width=175&name=2015-altitude-blue.png" width="100%" height="100%" /><br />
+               Hola, buenos días, mi nombre es {agent.fullName}, y le llamamos de <b>{service.name}</b>.<br />
+        ¿Podría hablar con <b>{contact.firstName} {contact.lastName}</b>?
+        <br><br>
+        MUCHAS GRACIAS.<br><br> 
+        <hr /><i>
+        Ayuda a la operación:<br />
+        <input type="text" id="MyTextBox" name="fname">
+        <input type="button" value="Prueba" id="boton_prueba"  /><br />
+        <ul>
+            <li>Si el cliente potencial <u>no está disponible</u>, ir a la opción de Resultado <b>"Rellamada"</b> y agendar una nueva fecha y hora de contacto y finalizar la sesión.</li>
+            <li>Si el cliente objetivo <u>está disponible</u>, pulsar la pestaña <b>"2 - Exposición"</b> y continuar con la gestión.</li>
+            <li>Si <u>no existe</u> el cliente objetivo o hay <u>datos erróneos</u>, ir a la opción de Resultado <b>"Inválido"</b> y seleccionar el motivo <b>"Datos Erróneos"</b> y finalizar la sesión.</li>
+            <li>Si se escucha un <u>buzón de voz o contestador</u>, ir a la opción de Resultado <b>"Rellamada"</b> y agendar una nueva hora posterior de contacto y finalizar la sesión.</li>
+            <li>En cualquier momento, se puede escribir notas y comentarios en la parte inferior (<u>Comentarios de la Interacción)</u>.</li>
+        </ul></i>         
+        </div>
+        </div>
+  
+        <div class="tab_script">
+          <input type="radio" name="css-tabs_script" id="tab_script-2" class="tab_script-switch">
+          <label for="tab_script-2" class="tab_script-label">Paso (2) - EXPOSICIÓN </label>
+          <div class="tab_script-content">Muy Bien <b>{contact.firstName} {contact.lastName}</b>, permitame comentarle el motivo de mi llamada .... (describir el motivo de la llamada).<input type="button" value="Ocultar Cabecera" id="contactbtn2" style="float: right;"/><br /><br />
+        <p>Podemos poner botones que abran una URL en un navegador <b>separado</b>, y pasarle parámetros (por GET):</p>
+              <hr /> 
+        <a href="https://pages.altitude.com/cloud-contact-center-virtual-call-center-software-sp?utm_campaign=SEM%20Spain&utm_medium=Text%20Ad&utm_source=ppc&gclid=CJqWwq2To9ACFUa3GwodlNYFTg" target="_blank" class="button-link">Web Altitude Xperiencce</a>
+            <a href="http://shop.altitude.es/" target="_blank" class="button-link">Altitude Shop</a>
+            <a href="http://www.altitude.es/soluciones/productos/suite-comunicaciones-unificadas-para-contact-centers" target="_blank" class="button-link">Productos</a>
+            <a href="http://www.altitude.es/soluciones/productos/ip-switch-para-contact-center" target="_blank" class="button-link">Altitude vBox</a>
+            <a href="http://www.altitude.es/soluciones/productos/mas-productos-de-software-para-contact-center" target="_blank" class="button-link">Todos los Productos</a>
+            Invocar a Páginas Blancas:
+            <a href="http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap1={contact.lastName}&nomprov={contact.homeStateProvince}&idioma=spa" target="_blank" class="button-link">Páginas Blancas</a>
+            <br /><img align=right alt="ALTITUDE" src="https://pages.altitude.com/hs-fs/hubfs/Product_Marketing/Product_Newsletter/July/2015-altitude-blue.png?t=1478908970284&width=175&name=2015-altitude-blue.png" /><br />
+              <hr />
+            <p>También es posible mostrar una página Web <b>embebida dentro</b> del Script y pasarle parámetros (el apellido y la provincia):
+               <input type="button" value="Mostrar Páginas Blancas en la Ventana" id="pblancas" />
+               <input type="button" value="Xperience" id="web_cliente"  /><br />
+
+               Poner una URL: <input type="text" value="http://" id="url_texto" size="91" /><input type="button" value="Acceder a esta URL" id="url_boton" />
+            </p>
+            <iframe id="iframeJM" src="https://pages.altitude.com/cloud-contact-center-virtual-call-center-software-sp?utm_campaign=SEM%20Spain&utm_medium=Text%20Ad&utm_source=ppc&gclid=CJqWwq2To9ACFUa3GwodlNYFTg" width="1200" height="600" frameborder="1" scrolling="auto"></iframe>
+        </div>
+        </div>
+ 
+        <div class="tab_script">
+          <input type="radio" name="css-tabs_script" id="tab_script-3" class="tab_script-switch" />
+          <label for="tab_script-3" class="tab_script-label">Paso (3) - NEGOCIACIÓN </label>
+          <div class="tab_script-content"><p align="center">En este caso se puede mostrar un Calendario para poder <b>CONCERTAR UNA CITA</b><input type="button" value="Ocultar Cabecera" id="contactbtn3" style="float: right;"/></p>
+          <iframe id="iframe1" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23cccccc&amp;src=v573o5ps76378faas2eaq3b54s%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Europe%2FBrussels" style="border-width:0" width="1200" height="600" frameborder="0" scrolling="no"></iframe><br /><br />
+           <a href="https://outlook.office365.com/owa/calendar/211b6577f0c74337badb411485e22873@altitude.com/1276e472c6ed47cf94ccc9241f762fc115629018723214949266/calendar.html" target="_blank" class="button-link">Abrir Calendario Outlook</a>
+        </div>
+        </div>
+ 
+        <div class="tab_script">
+          <input type="radio" name="css-tabs_script" id="tab_script-4" class="tab_script-switch">
+          <label for="tab_script-4" class="tab_script-label">Paso (4) - DESPEDIDA y CIERRE </label>
+          <div class="tab_script-content">
+        <p align=center style='text-align:center'><b><span style='font-size:16.0pt'>Aquí nos despediríamos del cliente</span><input type="button" value="Ocultar Cabecera" id="contactbtn4" style="float: right;"/></b></p>
+        <p>Muy bien Sr./Srta. <b>{contact.firstName} {contact.lastName}</b>,
+        muchas gracias por su atención y no dude en ponerse en contacto con nosotros siempre que lo necesite.</p>
+            <p>Que tenga un buen día!</p>
+              <hr />
+        <p align=center>Seleccionar un tipo de cierre: 
+                <select id="Select1">
+                    <option>Positivo</option>
+                    <option>Neutro</option>
+                    <option>Negativo</option>
+                </select><br />
+              ¿Añadir a Lista Robinson? >> <input id="Checkbox1" type="checkbox" value="hola"/><br />
+                     
+              </p>
+              <hr />
+        Ayuda a la operación:<br />
+        <ul><i>
+            <li>Ir a la opción de <u>Resultado</u> y seleccionar el cierre para esta sesión.</li>
+            <li>Si el cierre es de <b>Venta</b>, seleccionar esta opción y leer el <b>acuerdo verbal</b> para que se quede grabado.</li>
+            <li>Si el cierre es diferente, seleccionar el cierre adecuado a la sesión.</li>
+            <li>En cualquier momento, se puede escribir notas y comentarios en la parte inferior.</li>
+        </i></ul>        
+              <hr />  
+         </div>
+         </div>
+               
+         <div class="tab_script">
+          <input type="radio" name="css-tabs_script" id="tab_script-5" class="tab_script-switch">
+          <label for="tab_script-5" class="tab_script-label">Utilidades Script</label>
+            <div class="tab_script-content">
+        <p align=center style='text-align:center'><b><span style='font-size:16.0pt'><u>Uso de Campos en el Script </u></span></b></p>
+        <p>Esto es una página ejemplo de cómo poder usar los campos disponibles dentro de la página HTML que se va a usar como Script para el agente.<br />
+        Hay campos de 4 tipos: De Contacto (por defecto y personalizados), del Agente, del Servicio, de la Campaña, y del Canal en curso.</p>
+            <p>Ejemplo desarrollado por <b><span style='color:blue'>Altitude Software</span></b>.</p>
+        <p>Campos del CONTACTO. Ejemplos:
+          <ul>
+            <li>Empresa: <b>"{contact.company}"</b> -  <i><font color=blue>(contact.company)</font></i>, Sector: <b>"{contact.industry}"</b> - <i><font color=blue>(contact.industry)</font></i></li>
+            <li>Dirección: <b>"{contact.businessStreet}"</b> - <i><font color=blue>(contact.businessStreet)</font></i>, Ciudad: <b>"{contact.businessCity}"</b> - <i><font color=blue>(contact.businessCity)</font></i></li>
+            <li>Provincia: <b>"{contact.businessStateProvince}"</b> - <i><font color=blue>(contact.businessStateProvince)</font>, </i>Código Postal: <b>"{contact.businessPostalCode}"</b> - <i><font color=blue>(contact.businessPostalCode)</font></i></li>
+            <li>Teléfono Centralita: <b>"{contact.otherPhone}"</b> - <i><font color=blue>(contact.otherPhone)</font></i>, Departamento: <b>"{contact.department}"</b> - <i><font color=blue>(contact.department)</font></i></li>
+            <li>Comentarios: <b>"{contact.comments}"</b> - <i><font color=blue>(contact.comments)</font></i></li>
+            <li>Nombre: <b>"{contact.firstName}"</b> -  <i><font color=blue>(contact.firstName)</font></i>, Apellidos: <b>"{contact.lastName}"</b> - <i><font color=blue>(contact.lastName)</font></i></li>
+            <li>Teléfono Trabajo: <b>"{contact.businessPhone}"</b> - <i><font color=blue>(contact.businessPhone)</font></i>, Teléfono Móvil: <b>"{contact.mobilePhone}"</b> - <i><font color=blue>(contact.mobilePhone)</font></i></li>
+            <li>Teléfono Trabajo: <b>"{contact.businessPhone}"</b> - <i><font color=blue>(contact.businessPhone)</font></i>, Teléfono Alternativo: <b>"{contact.otherPhone}"</b> - <i><font color=blue>(contact.otherPhone)</font></i></li>
+            <li>Email 1: <b>"{contact.email1}"</b> - <i><font color=blue>(contact.email1)</font></i>, Mensajería 1: <b>"{contact.instantMessaging1}"</b> - <i><font color=blue>(contact.instantMessaging1)</font></i></li>
+            <li>Los campos personalizados tienen la estructura <i><font color=blue>contact.custom.nombre_del_campo)</font></i></li>
+            <li>CIF: <b>"{contact.custom.cif}"</b> - <i><font color=blue>(contact.custom.cif)</font></i></li>
+          </ul>
+                      </p>
+            <p> Campos del AGENTE, del SERVICIO, de la CAMPAÑA y del CANAL en curso (por el momento solo del de Telefonía). Ejemplos:
+                <ul>
+            <li>Nombre del Agente: <b>"{agent.fullName}"</b> - <i><font color=blue>(agent.FullName)</font></i></li>
+            <li>ID del Agente: <b>"{agent.name}"</b> - <i><font color=blue>(agent.name)</font></i></li>
+            <li>Nombre del Servicio:  <b>"{service.name}"</b> - <i><font color=blue>(service.name)</font></i></li>
+            <li>Descripción del Servicio:  <b>"{service.description}"</b> - <i><font color=blue>(service.description)</font></i></li>
+            <li>Nombre de la Campaña: <b>"{campaign.name}"</b> - <i><font color=blue>(campaign.name)</font></i></li>
+            <li>Nombre de la Empresa:  <b>"{service.customerName}"</b> - <i><font color=blue>(service.customerName)</font></i></li>
+            <!--li>Descripción de la Campaña: <b>"{campaign.description}"</b> - <i><font color=blue>(campaign.description)</font></i></li-->
+            <li>Número del Teléfono marcado:  <b>"{phoneMedia.dialedNumber}"</b> - <i><font color=blue>(phoneMedia.dialedNumber)</font></i></li>
+                </ul>
+        </p>
+            <p> Para usarlos, solo tenemos que poner entre llaves <b>{.......}</b> el nombre del campo interno que vemos a la derecha en color <i><font color=blue>azul</font></i>.<br />
+            Hay un listado completo de los campos por defecto que se pueden utilizar, y se puede ver el nombre interno de los campos personalizados en las propiedades de dichos campos.<br />
+            </p>
+            <p>También es posible utilizar <a href="http://www.dustjs.com/" target=_blank>DUST JS expressions</a> dentro del HTML.<br />
+            Por ejemplo: Fecha y Hora actual formateada: <b>{@formatDate format="DD/MM/YYYY, HH:mm:ss"/}</b> (<i><font color=blue>@formatDate format="DD/MM/YYYY, HH:mm:ss"/)</font></i>). Otro formato: <b>{@formatDate format="MMMM Do, YYYY - HH:mm"/}</b> (<i><font color=blue>@formatDate format="MMMM Do, YYYY - HH:mm"/)</font></i>)<br>
+            Otro ejemplo: El campo género (<i><font color=blue>contact.gender)</font></i>) viene como un número que hay que convertir a texto (másculino = 0, o femenino = 1).<br />
+            Sería algo así: (<i><font color=blue>[@eq key=contact.gender value="" type="number"]Sin Definir[/eq][@eq key=contact.gender value="0" type="number"]Masculino[/eq][@eq key=contact.gender value="1" type="number"]Femenino[/eq]</font></i>)<br />
+            <i>(Nota: En el ejemplo, hay que cambiar los corchetes por llaves)</i>
+            </p>
+            <p>
+            <b>LISTADO DE TODOS LOS CAMPOS DISPONIBLES (POR DEFECTO, PERSONALIZADOS Y DE DUST JS)</b>:
+            <ul>
+                <li><u>DATOS PERSONALES</u>: <font color=blue>contact.uniqueId, contact.title, contact.firstName, contact.middleName, contact.lastName, contact.suffix, contact.nickname, contact.gender, contact.preferredLanguage, contact.birthday, contact.maritalStatus, contact.spousePartner, contact.children, contact.comments</font></li>
+                <li><u>DATOS DE DIRECCIONES (hay 3)</u>: <font color=blue>contact.homeStreet, contact.homeCity, contact.homeStateProvince, contact.homePostalCode, contact.homeCountry, contact.businessStreet, contact.businessCity, contact.businessStateProvince, contact.businessPostalCode, contact.businessCountry, contact.otherStreet, contact.otherCity, contact.otherStateProvince, contact.otherPostalCode, contact.otherCountry</font></li>
+                <li><u>DATOS DEL TRABAJO</u>: <font color=blue>contact.company, contact.jobTitle, contact.department, contact.office, contact.profession, contact.manager, contact.assistant, contact.industry, contact.income</font></li>
+                <li><u>DATOS DE TELÉFONOS</u>: <font color=blue>contact.homePhone, contact.businessPhone, contact.mobilePhone, contact.otherPhone, contact.homeFax, contact.businessFax</font></li>
+                <li><u>DATOS DE EMAIL y MENSAJERÍA</u>: <font color=blue>contact.email1, contact.email2, contact.email3, contact.instantMessaging1, contact.InstantMessaging2, contact.InstantMessaging3</font></li>
+                <li><u>OTROS CAMPOS DISPONIBLES</u>: <font color=blue>agent.fullName, agent.name, campaign.name, campaign.service.name, phoneMedia.dialedNumber, service.name, service.description</font></li>         
+            </ul>
+            <ul>
+                <li><u>DATOS PERSONALIZADOS</u>: Los campos personalizados que se crean en la entrada "<u>Campos del Contacto (Ficha del Cliente)</u>" de la campaña tienen su propio nombre que deberemos poner al crearlos en la entrada <font color=blue>"Personalizado ID"</font>.<br />
+                Por ejemplo, si creamos un campo personalizado llamado "Perfil de Riesgo", deberemos poner en Personalizado ID algo como: "perfil_de_riesgo" (evitar espacios, acentos y símbolos).<br />
+                Cuando querramos hacer referencia de este campo en el script, pondremos <font color=blue>contact.custom.perfil_de_riesgo</font> entre llaves ({.......})</li>            
+            </ul> 
+            <ul>
+                <li><u>UTILIDADES ESPECIALES</u>: Se pueden usar expresiones del tipo <a href="http://www.dustjs.com/" target=_blank>DUST JS expressions</a> dentro del HTML.</li>
+            </ul>      
+            </p>
+            <hr />
+            <p style='text-align:center'>
+                <img alt="Altitude" src="http://www.altitude.es/uploads/images/201516/be/altitude_software_2082.png" />
+                <br /><i>Powered by Altitude Cloud  </i>
+            </p>
+          <hr />
+          </div>
+          </div>
+      </div>
+    </div>
+<!--============================ZONA DE ESTILOS=============================-->
+    <style>
+    * { box-sizing: border-box; }
+    .wrapper {
+      white-space: normal;
+      font-family: "Arial";
+      max-width: 94em;
+      line-height:  1.618em;
+    }
+    .tabs_script {
+      position: relative;
+    }
+    .tabs_script::before,
+    .tabs_script::after {
+      content: "";
+      display: table;
+    }
+    .tabs_script::after { clear: both; }
+    .tab_script { float: left; }
+    .tab_script-switch { display: none; }
+    .tab_script-label {
+      position: relative;
+      display: block;
+      line-height: 2.75em;
+      height: 3em;
+      padding: 0 1.618em;
+      background: #A6A6A6;
+      border-right: 0.125rem solid #fff;
+      color: #000;
+      cursor: pointer;
+      top: 0;
+      transition: all 0.25s;
+    }
+    .tab_script-label:hover {
+      top: -0.25rem;
+      transition: all 0.25s;
+      color: Aqua;
+    }
+    .tab_script-content {
+      width: 100%;
+      padding: 1.618rem;
+      background: #eee;
+      color: #000;
+      border-bottom: 0.25rem solid #bdc3c7;
+      position: absolute;
+      z-index: 1;
+      top: 2.75em;
+      left: 0;
+      opacity: 0;
+      transition: all 0.35s;
+    }
+    .tab_script-switch:checked + .tab_script-label {
+      background: #CCCCCC;
+      color: #000;
+      font-weight: bold;
+      font-style:italic
+      border-bottom: 0;
+      border-right: 0.0625rem solid #fff;
+      transition: all 0.35s;
+      z-index: 2;
+      top: -0.0625rem;
+    }
+    .tab_script-switch:checked + .tab_script-label:hover { top: -0.0625rem; }
+    .tab_script-switch:checked + .tab_script-label + .tab_script-content {
+      opacity: 1;
+      transition: all 0.35s;
+      z-index: 3;
+    }
+    .button-link {
+        padding: 10px 15px;
+        background: #4479BA;
+        color: #FFF;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        border: solid 1px #20538D;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        text-decoration: none;
+    }
+    .button-link:hover {
+        background: #356094;
+        border: solid 1px #2A4E77;
+        text-decoration: none;
+    }
+    .button-link:active {
+        -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+        background: #2E5481;
+        border: solid 1px #203E5F;
+        text-decoration: none;
+    }
+    .flotante {
+    display:scroll;
+        position:fixed;
+        top:380px;
+        right:50px;
+    }
+    img { 
+        width:25%; 
+        height:25%;
+}
+    </style>
+<!--============================ZONA DE SCRIPTS=============================-->
+<script type="text/javascript">
+    var button1 = document.getElementById('contactbtn1')
+    var button2 = document.getElementById('contactbtn2')
+    var button3 = document.getElementById('contactbtn3')
+    var button4 = document.getElementById('contactbtn4')
+    button1.onclick = function() {
+      var divToHide = document.getElementsByClassName("inner");
+        if (divToHide[0].style.display !== 'none') {
+            divToHide[0].style.display = 'none';
+            button1.value="Mostrar Cabecera";
+            button2.value="Mostrar Cabecera";
+            button3.value="Mostrar Cabecera";
+            button4.value="Mostrar Cabecera";
+        }
+        else {
+            divToHide[0].style.display = 'block';
+            button1.value="Ocultar Cabecera";
+            button2.value="Ocultar Cabecera";
+            button3.value="Ocultar Cabecera";
+            button4.value="Ocultar Cabecera";
+
+        }
+    }
+    button2.onclick = function() {
+      var divToHide = document.getElementsByClassName("inner");
+        if (divToHide[0].style.display !== 'none') {
+            divToHide[0].style.display = 'none';
+            button1.value="Mostrar Cabecera";
+            button2.value="Mostrar Cabecera";
+            button3.value="Mostrar Cabecera";
+            button4.value="Mostrar Cabecera"; 
+        }
+        else {
+            divToHide[0].style.display = 'block';
+            button1.value="Ocultar Cabecera";
+            button2.value="Ocultar Cabecera";
+            button3.value="Ocultar Cabecera";
+            button4.value="Ocultar Cabecera";
+        }
+    }
+    button3.onclick = function() {
+      var divToHide = document.getElementsByClassName("inner");
+        if (divToHide[0].style.display !== 'none') {
+            divToHide[0].style.display = 'none';
+            button1.value="Mostrar Cabecera";
+            button2.value="Mostrar Cabecera";
+            button3.value="Mostrar Cabecera";
+            button4.value="Mostrar Cabecera";
+        }
+        else {
+            divToHide[0].style.display = 'block';
+            button1.value="Ocultar Cabecera";
+            button2.value="Ocultar Cabecera";
+            button3.value="Ocultar Cabecera";
+            button4.value="Ocultar Cabecera";
+        }
+    }
+    button4.onclick = function() {
+      var divToHide = document.getElementsByClassName("inner");
+        if (divToHide[0].style.display !== 'none') {
+            divToHide[0].style.display = 'none';
+            button1.value="Mostrar Cabecera";
+            button2.value="Mostrar Cabecera";
+            button3.value="Mostrar Cabecera";
+            button4.value="Mostrar Cabecera";
+        }
+        else {
+            divToHide[0].style.display = 'block';
+            button1.value="Ocultar Cabecera";
+            button2.value="Ocultar Cabecera";
+            button3.value="Ocultar Cabecera";
+            button4.value="Ocultar Cabecera";
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    var boton_pblancas = document.getElementById('pblancas')
+    var boton_web_cliente = document.getElementById('web_cliente')
+    var boton_url = document.getElementById('url_boton')
+    boton_pblancas.onclick = function() {
+        document.getElementById('iframeJM').src = "http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap1={contact.lastName}&nomprov={contact.homeStateProvince}&idioma=spa/";
+    }
+    boton_web_cliente.onclick = function() {
+        document.getElementById('iframeJM').src = "https://pages.altitude.com/cloud-contact-center-virtual-call-center-software-sp?utm_campaign=SEM%20Spain&utm_medium=Text%20Ad&utm_source=ppc&gclid=CJqWwq2To9ACFUa3GwodlNYFTg";
+    }
+    boton_url.onclick = function() {
+        document.getElementById('iframeJM').src = document.getElementById('url_texto').value;
+    }
+</script>
+
+<script type="text/javascript">
+	document.getElementById("boton_prueba").addEventListener("click", function(){
+	document.getElementById("MyTextBox").value="Raul";
+    //document.getElementsByClassName("ctext cfield cattr_contactProfileBuiltIn.firstName").value = "Hello World";    
+});
+</script>
+
+</body>
+</html>
